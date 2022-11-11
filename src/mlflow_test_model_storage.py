@@ -7,7 +7,7 @@ import mlflow.sklearn
 
 
 def test_model_run_and_storage(experiment_id: str):
-    with mlflow.start_run(experiment_id=experiment_id, run_name="YOUR_RUN_NAME") as run:
+    with mlflow.start_run(experiment_id=experiment_id,run_name="My new run") as run:
         params = {"n_estimators": 5, "random_state": 42}
         sk_learn_rfr = RandomForestRegressor(**params)
 
