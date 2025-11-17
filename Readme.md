@@ -21,9 +21,19 @@ Instalación de requerimientos python
 
 `pip install -r setup/requirements.txt`
 
-Exportación de variable de entorno apuntando al servidor MLflow deseado:
+Exportación de variables de entorno apuntando al servidor MLflow deseado:
 
 `export MLFLOW_TRACKING_URI=http://178.60.252.123:4020`
+
+`export MLFLOW_S3_ENDPOINT_URL=http://178.60.252.123:4021`
+
+`export AWS_ACCESS_KEY_ID=admin`
+
+`export AWS_SECRET_ACCESS_KEY=sample_key`
+
+`export AWS_REGION=us-east-1`
+
+`export AWS_BUCKET_NAME=mlflow`
 
 Nota: Se recomienda el uso de un entorno virutal para la instalación de este set de requerimientos (conda, venv etc)
 
